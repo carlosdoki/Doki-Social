@@ -1,0 +1,6 @@
+framework module Pods_Doki_Social {
+  umbrella header "Pods-Doki-Social-umbrella.h"
+
+  export *
+  module * { export * }
+}

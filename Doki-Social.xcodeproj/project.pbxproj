@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612DE58C5731A29207AAF71D /* Pods_Doki_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */; };
 		BCBDB6351E7EEDE800718EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDB6341E7EEDE800718EF1 /* AppDelegate.swift */; };
-		BCBDB6371E7EEDE800718EF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDB6361E7EEDE800718EF1 /* ViewController.swift */; };
+		BCBDB6371E7EEDE800718EF1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDB6361E7EEDE800718EF1 /* SignInVC.swift */; };
 		BCBDB63A1E7EEDE800718EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBDB6381E7EEDE800718EF1 /* Main.storyboard */; };
 		BCBDB63C1E7EEDE800718EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBDB63B1E7EEDE800718EF1 /* Assets.xcassets */; };
 		BCBDB63F1E7EEDE800718EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBDB63D1E7EEDE800718EF1 /* LaunchScreen.storyboard */; };
+		BCBDB6471E7EEE8700718EF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBDB6461E7EEE8700718EF1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doki_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.debug.xcconfig"; sourceTree = "<group>"; };
+		8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.release.xcconfig"; sourceTree = "<group>"; };
 		BCBDB6311E7EEDE800718EF1 /* Doki-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doki-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBDB6341E7EEDE800718EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCBDB6361E7EEDE800718EF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCBDB6361E7EEDE800718EF1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		BCBDB6391E7EEDE800718EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCBDB63B1E7EEDE800718EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCBDB63E1E7EEDE800718EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCBDB6401E7EEDE800718EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBDB6461E7EEE8700718EF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612DE58C5731A29207AAF71D /* Pods_Doki_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05162BB1C02A24BDA4AB9C5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FAEB2D7DC69EC140971C906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */,
+				8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC95D8241E7EF07100E8A16F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC95D8251E7EF07900E8A16F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BC95D8261E7EF08100E8A16F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDB6361E7EEDE800718EF1 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		BCBDB6281E7EEDE800718EF1 = {
 			isa = PBXGroup;
 			children = (
 				BCBDB6331E7EEDE800718EF1 /* Doki-Social */,
 				BCBDB6321E7EEDE800718EF1 /* Products */,
+				8FAEB2D7DC69EC140971C906 /* Pods */,
+				05162BB1C02A24BDA4AB9C5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +102,15 @@
 		BCBDB6331E7EEDE800718EF1 /* Doki-Social */ = {
 			isa = PBXGroup;
 			children = (
+				BC95D8241E7EF07100E8A16F /* Model */,
+				BC95D8261E7EF08100E8A16F /* Controller */,
+				BC95D8251E7EF07900E8A16F /* View */,
 				BCBDB6341E7EEDE800718EF1 /* AppDelegate.swift */,
-				BCBDB6361E7EEDE800718EF1 /* ViewController.swift */,
 				BCBDB6381E7EEDE800718EF1 /* Main.storyboard */,
 				BCBDB63B1E7EEDE800718EF1 /* Assets.xcassets */,
 				BCBDB63D1E7EEDE800718EF1 /* LaunchScreen.storyboard */,
 				BCBDB6401E7EEDE800718EF1 /* Info.plist */,
+				BCBDB6461E7EEE8700718EF1 /* GoogleService-Info.plist */,
 			);
 			path = "Doki-Social";
 			sourceTree = "<group>";
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCBDB6431E7EEDE800718EF1 /* Build configuration list for PBXNativeTarget "Doki-Social" */;
 			buildPhases = (
+				0D3BB4BC4CFF5E8413685EEE /* [CP] Check Pods Manifest.lock */,
 				BCBDB62D1E7EEDE800718EF1 /* Sources */,
 				BCBDB62E1E7EEDE800718EF1 /* Frameworks */,
 				BCBDB62F1E7EEDE800718EF1 /* Resources */,
+				4D23FD1EE84198462ADB1F5C /* [CP] Embed Pods Frameworks */,
+				A89444C759F0649CA6CFB546 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBDB63F1E7EEDE800718EF1 /* LaunchScreen.storyboard in Resources */,
+				BCBDB6471E7EEE8700718EF1 /* GoogleService-Info.plist in Resources */,
 				BCBDB63C1E7EEDE800718EF1 /* Assets.xcassets in Resources */,
 				BCBDB63A1E7EEDE800718EF1 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D3BB4BC4CFF5E8413685EEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D23FD1EE84198462ADB1F5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89444C759F0649CA6CFB546 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCBDB62D1E7EEDE800718EF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBDB6371E7EEDE800718EF1 /* ViewController.swift in Sources */,
+				BCBDB6371E7EEDE800718EF1 /* SignInVC.swift in Sources */,
 				BCBDB6351E7EEDE800718EF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		BCBDB6441E7EEDE800718EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7984M9FF87;
@@ -272,6 +376,7 @@
 		};
 		BCBDB6451E7EEDE800718EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7984M9FF87;
@@ -302,6 +407,7 @@
 				BCBDB6451E7EEDE800718EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
