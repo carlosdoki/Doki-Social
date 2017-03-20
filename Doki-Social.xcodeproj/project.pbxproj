@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		612DE58C5731A29207AAF71D /* Pods_Doki_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */; };
+		BCBC68601E803D8300DCCDA4 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC685F1E803D8300DCCDA4 /* FancyView.swift */; };
+		BCBC68631E803E1100DCCDA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC68621E803E1100DCCDA4 /* Constants.swift */; };
+		BCBC68651E8074D100DCCDA4 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC68641E8074D100DCCDA4 /* RoundBtn.swift */; };
+		BCBC68671E8078B500DCCDA4 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC68661E8078B500DCCDA4 /* FancyField.swift */; };
+		BCBC68691E8079EF00DCCDA4 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC68681E8079EF00DCCDA4 /* FancyBtn.swift */; };
 		BCBDB6351E7EEDE800718EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDB6341E7EEDE800718EF1 /* AppDelegate.swift */; };
 		BCBDB6371E7EEDE800718EF1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDB6361E7EEDE800718EF1 /* SignInVC.swift */; };
 		BCBDB63A1E7EEDE800718EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBDB6381E7EEDE800718EF1 /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doki_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.release.xcconfig"; sourceTree = "<group>"; };
+		BCBC685F1E803D8300DCCDA4 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		BCBC68621E803E1100DCCDA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCBC68641E8074D100DCCDA4 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		BCBC68661E8078B500DCCDA4 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		BCBC68681E8079EF00DCCDA4 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		BCBDB6311E7EEDE800718EF1 /* Doki-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doki-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBDB6341E7EEDE800718EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBDB6361E7EEDE800718EF1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -69,6 +79,10 @@
 		BC95D8251E7EF07900E8A16F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCBC685F1E803D8300DCCDA4 /* FancyView.swift */,
+				BCBC68641E8074D100DCCDA4 /* RoundBtn.swift */,
+				BCBC68661E8078B500DCCDA4 /* FancyField.swift */,
+				BCBC68681E8079EF00DCCDA4 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -79,6 +93,14 @@
 				BCBDB6361E7EEDE800718EF1 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCBC68611E803DFF00DCCDA4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC68621E803E1100DCCDA4 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		BCBDB6281E7EEDE800718EF1 = {
@@ -102,6 +124,7 @@
 		BCBDB6331E7EEDE800718EF1 /* Doki-Social */ = {
 			isa = PBXGroup;
 			children = (
+				BCBC68611E803DFF00DCCDA4 /* Util */,
 				BC95D8241E7EF07100E8A16F /* Model */,
 				BC95D8261E7EF08100E8A16F /* Controller */,
 				BC95D8251E7EF07900E8A16F /* View */,
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBC68671E8078B500DCCDA4 /* FancyField.swift in Sources */,
 				BCBDB6371E7EEDE800718EF1 /* SignInVC.swift in Sources */,
+				BCBC68651E8074D100DCCDA4 /* RoundBtn.swift in Sources */,
 				BCBDB6351E7EEDE800718EF1 /* AppDelegate.swift in Sources */,
+				BCBC68601E803D8300DCCDA4 /* FancyView.swift in Sources */,
+				BCBC68631E803E1100DCCDA4 /* Constants.swift in Sources */,
+				BCBC68691E8079EF00DCCDA4 /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
