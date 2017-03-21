@@ -92,7 +92,7 @@
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ete-LR-6pA" customClass="FancyBtn" customModule="Doki_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="283" height="36"/>
@@ -101,6 +101,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signinBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFK-Ot-IcY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -124,10 +127,48 @@
                             <constraint firstItem="URu-Xk-xJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vmG-7A-rug"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Alt-GK-F1u" id="FGg-uQ-sLa"/>
+                        <outlet property="passwordField" destination="Vd5-X3-DIr" id="qdO-gh-mPJ"/>
+                        <segue destination="iV5-7R-jmi" kind="show" identifier="gotoFeed" id="oGs-RL-bE7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="ePg-4L-BVX">
+            <objects>
+                <viewController id="iV5-7R-jmi" customClass="FeedVC" customModule="Doki_Social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bu1-hh-F4S"/>
+                        <viewControllerLayoutGuide type="bottom" id="0py-bL-7HG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbp-hk-nb8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGH-Tg-hme">
+                                <rect key="frame" x="159" y="318" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="singoutBtnPressed:" destination="iV5-7R-jmi" eventType="touchUpInside" id="MxY-qn-Skk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.002492246450856328" green="0.58062481880187988" blue="0.62789946794509888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSignUp" id="2f6-2b-8Pd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDV-0N-byC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="139"/>
         </scene>
     </scenes>
     <resources>
