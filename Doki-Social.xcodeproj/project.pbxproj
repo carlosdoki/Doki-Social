@@ -25,6 +25,7 @@
 		58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doki_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.release.xcconfig"; sourceTree = "<group>"; };
+		BC700CDE1E8188A10061B0C1 /* Doki-Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Doki-Social.entitlements"; sourceTree = "<group>"; };
 		BCBC685F1E803D8300DCCDA4 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		BCBC68621E803E1100DCCDA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BCBC68641E8074D100DCCDA4 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		BCBDB6331E7EEDE800718EF1 /* Doki-Social */ = {
 			isa = PBXGroup;
 			children = (
+				BC700CDE1E8188A10061B0C1 /* Doki-Social.entitlements */,
 				BCBC68611E803DFF00DCCDA4 /* Util */,
 				BC95D8241E7EF07100E8A16F /* Model */,
 				BC95D8261E7EF08100E8A16F /* Controller */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7984M9FF87;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -393,9 +400,14 @@
 			baseConfigurationReference = 7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Doki-Social/Doki-Social.entitlements";
 				DEVELOPMENT_TEAM = 7984M9FF87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Doki-Social/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlosdoki.Doki-Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,9 +420,14 @@
 			baseConfigurationReference = 8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Doki-Social/Doki-Social.entitlements";
 				DEVELOPMENT_TEAM = 7984M9FF87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Doki-Social/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlosdoki.Doki-Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
