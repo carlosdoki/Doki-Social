@@ -194,12 +194,12 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmk-BI-Y7t" customClass="FancyView" customModule="Doki_Social" customModuleProvider="target">
-                                <rect key="frame" x="10" y="75" width="355" height="65"/>
+                                <rect key="frame" x="16" y="75" width="343" height="65"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="USv-02-9rK">
-                                        <rect key="frame" x="8" y="8" width="339" height="49"/>
+                                        <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="D4l-N6-IKp">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="D4l-N6-IKp" customClass="CircleView" customModule="Doki_Social" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.12449917942285538" green="0.58223050832748413" blue="0.6254311203956604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -208,19 +208,19 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02B-ha-5q9" customClass="FancyField" customModule="Doki_Social" customModuleProvider="target">
-                                                <rect key="frame" x="59" y="0.0" width="221" height="49"/>
+                                                <rect key="frame" x="59" y="0.0" width="209" height="49"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u81-7I-vrH" customClass="RoundBtn" customModule="Doki_Social" customModuleProvider="target">
-                                                <rect key="frame" x="290" y="0.0" width="49" height="49"/>
+                                                <rect key="frame" x="278" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.92035740613937378" green="0.40779584646224976" blue="0.20272520184516907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="0zh-1k-k3A"/>
                                                     <constraint firstAttribute="height" constant="49" id="hWu-a3-j8B"/>
                                                 </constraints>
-                                                <state key="normal" image="post"/>
+                                                <state key="normal" image="add-post"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -234,22 +234,22 @@
                                     <constraint firstItem="USv-02-9rK" firstAttribute="leading" secondItem="jmk-BI-Y7t" secondAttribute="leading" constant="8" id="jd0-z3-iFl"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="376" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJ4-2G-uLf">
-                                <rect key="frame" x="0.0" y="150" width="375" height="467"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="376" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJ4-2G-uLf">
+                                <rect key="frame" x="0.0" y="148" width="375" height="469"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="376" id="00e-KY-sKy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="376" id="00e-KY-sKy" customClass="PostCell" customModule="Doki_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="376"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="00e-KY-sKy" id="4oF-ee-lhP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDG-uf-1El" customClass="FancyView" customModule="Doki_Social" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="5" width="343" height="365.5"/>
+                                                    <rect key="frame" x="16" y="5" width="343" height="366"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a2M-qU-hTD">
-                                                            <rect key="frame" x="8" y="8" width="327" height="317.5"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="318"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pv5-1b-S3C">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
@@ -267,7 +267,7 @@
                                                                             <color key="textColor" red="0.92035740610000005" green="0.4077958465" blue="0.2027252018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_heart" translatesAutoresizingMaskIntoConstraints="NO" id="ubD-3N-beg" customClass="CircleView" customModule="Doki_Social" customModuleProvider="target">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="ubD-3N-beg" customClass="CircleView" customModule="Doki_Social" customModuleProvider="target">
                                                                             <rect key="frame" x="267" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="nz1-5t-jpW"/>
@@ -283,7 +283,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exA-kd-xGe">
-                                                                    <rect key="frame" x="0.0" y="220" width="327" height="97.5"/>
+                                                                    <rect key="frame" x="0.0" y="220" width="327" height="98"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -297,7 +297,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-fJ-s0z">
-                                                            <rect key="frame" x="258.5" y="335.5" width="76.5" height="22"/>
+                                                            <rect key="frame" x="258.5" y="336" width="76.5" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQr-ZJ-4S4">
                                                                     <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
@@ -308,7 +308,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikb-wf-vkb">
                                                                     <rect key="frame" x="40.5" y="0.0" width="36" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -332,29 +332,38 @@
                                                 <constraint firstItem="xDG-uf-1El" firstAttribute="top" secondItem="4oF-ee-lhP" secondAttribute="top" constant="5" id="wdp-P8-5dV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.89054572430000001" green="0.89054572430000001" blue="0.89054572430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="caption" destination="exA-kd-xGe" id="kqm-R1-9mT"/>
+                                            <outlet property="likesLbl" destination="Ikb-wf-vkb" id="NCG-bQ-PAw"/>
+                                            <outlet property="postImg" destination="ubD-3N-beg" id="osX-UD-lIJ"/>
+                                            <outlet property="profileImg" destination="Sg3-yX-7gn" id="Kps-ta-JHA"/>
+                                            <outlet property="usernameLbl" destination="s37-yh-E5X" id="JcE-Xj-ICy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="sJ4-2G-uLf" firstAttribute="top" secondItem="jmk-BI-Y7t" secondAttribute="bottom" constant="10" id="1cN-3D-Xxc"/>
+                            <constraint firstItem="sJ4-2G-uLf" firstAttribute="top" secondItem="jmk-BI-Y7t" secondAttribute="bottom" constant="8" id="1cN-3D-Xxc"/>
                             <constraint firstItem="sJ4-2G-uLf" firstAttribute="leading" secondItem="hbp-hk-nb8" secondAttribute="leading" id="8Qy-rk-kmx"/>
                             <constraint firstItem="0py-bL-7HG" firstAttribute="top" secondItem="cFj-IL-mHq" secondAttribute="bottom" id="9BO-5q-a8b"/>
                             <constraint firstItem="xCT-CA-3rG" firstAttribute="leading" secondItem="hbp-hk-nb8" secondAttribute="leading" id="9Mk-88-7lG"/>
-                            <constraint firstItem="jmk-BI-Y7t" firstAttribute="leading" secondItem="hbp-hk-nb8" secondAttribute="leading" constant="10" id="FNr-J2-eoD"/>
+                            <constraint firstItem="jmk-BI-Y7t" firstAttribute="leading" secondItem="hbp-hk-nb8" secondAttribute="leading" constant="16" id="FNr-J2-eoD"/>
                             <constraint firstItem="xCT-CA-3rG" firstAttribute="top" secondItem="hbp-hk-nb8" secondAttribute="top" id="HLv-7f-aHy"/>
                             <constraint firstItem="cFj-IL-mHq" firstAttribute="top" secondItem="sJ4-2G-uLf" secondAttribute="bottom" id="Vab-7T-vAg"/>
                             <constraint firstItem="jmk-BI-Y7t" firstAttribute="top" secondItem="xCT-CA-3rG" secondAttribute="bottom" constant="10" id="gtf-hP-HiI"/>
                             <constraint firstAttribute="trailing" secondItem="cFj-IL-mHq" secondAttribute="trailing" id="hEN-EM-1P5"/>
                             <constraint firstItem="cFj-IL-mHq" firstAttribute="leading" secondItem="hbp-hk-nb8" secondAttribute="leading" id="k3M-1x-nhS"/>
-                            <constraint firstAttribute="trailing" secondItem="jmk-BI-Y7t" secondAttribute="trailing" constant="10" id="ov7-zr-Zer"/>
+                            <constraint firstAttribute="trailing" secondItem="jmk-BI-Y7t" secondAttribute="trailing" constant="16" id="ov7-zr-Zer"/>
                             <constraint firstAttribute="trailing" secondItem="sJ4-2G-uLf" secondAttribute="trailing" id="sEH-gd-1qe"/>
                             <constraint firstAttribute="trailing" secondItem="xCT-CA-3rG" secondAttribute="trailing" id="ubl-j7-NiB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="cFj-IL-mHq" id="Qdl-u8-pY0"/>
+                        <outlet property="tableView" destination="sJ4-2G-uLf" id="Gpr-YE-pnV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSignUp" id="2f6-2b-8Pd"/>
                     </connections>
                 </viewController>
@@ -366,9 +375,9 @@
     <resources>
         <image name="Doki-Social" width="555" height="97"/>
         <image name="FB-fLogo-Blue-broadcast-2" width="250" height="250"/>
-        <image name="empty_heart" width="256" height="256"/>
-        <image name="photo" width="512" height="512"/>
-        <image name="post" width="512" height="512"/>
-        <image name="sign-out" width="512" height="512"/>
+        <image name="add-image" width="88" height="88"/>
+        <image name="add-post" width="88" height="88"/>
+        <image name="empty-heart" width="70" height="70"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
