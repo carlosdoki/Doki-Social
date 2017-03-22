@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		612DE58C5731A29207AAF71D /* Pods_Doki_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */; };
+		BC0C85191E83363100B24330 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C85181E83363100B24330 /* DataService.swift */; };
 		BC7729FB1E82C8610087C46C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7729FA1E82C8600087C46C /* CircleView.swift */; };
 		BC7729FD1E82D6560087C46C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7729FC1E82D6560087C46C /* PostCell.swift */; };
 		BCBC68601E803D8300DCCDA4 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC685F1E803D8300DCCDA4 /* FancyView.swift */; };
@@ -28,6 +29,7 @@
 		58D102873FA08FABEC7E7B35 /* Pods_Doki_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doki_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BCF2902BAB3E46CBDDCAE /* Pods-Doki-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doki-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doki-Social/Pods-Doki-Social.release.xcconfig"; sourceTree = "<group>"; };
+		BC0C85181E83363100B24330 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BC700CDE1E8188A10061B0C1 /* Doki-Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Doki-Social.entitlements"; sourceTree = "<group>"; };
 		BC7729FA1E82C8600087C46C /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BC7729FC1E82D6560087C46C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 				8F5017EECA23C95033B0F7C7 /* Pods-Doki-Social.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC0C85171E83361500B24330 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC0C85181E83363100B24330 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		BC95D8241E7EF07100E8A16F /* Model */ = {
@@ -134,6 +144,7 @@
 		BCBDB6331E7EEDE800718EF1 /* Doki-Social */ = {
 			isa = PBXGroup;
 			children = (
+				BC0C85171E83361500B24330 /* Services */,
 				BC700CDE1E8188A10061B0C1 /* Doki-Social.entitlements */,
 				BCBC68611E803DFF00DCCDA4 /* Util */,
 				BC95D8241E7EF07100E8A16F /* Model */,
@@ -284,6 +295,7 @@
 				BCBDB6371E7EEDE800718EF1 /* SignInVC.swift in Sources */,
 				BCBC68651E8074D100DCCDA4 /* RoundBtn.swift in Sources */,
 				BCBDB6351E7EEDE800718EF1 /* AppDelegate.swift in Sources */,
+				BC0C85191E83363100B24330 /* DataService.swift in Sources */,
 				BCBD36531E81F0C200731A71 /* FeedVC.swift in Sources */,
 				BCBC68601E803D8300DCCDA4 /* FancyView.swift in Sources */,
 				BCBC68631E803E1100DCCDA4 /* Constants.swift in Sources */,
