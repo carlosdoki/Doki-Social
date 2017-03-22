@@ -12,4 +12,5 @@ target 'Doki-Social' do
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
   pod 'SwiftKeychainWrapper'
+  pod 'Firebase/AdMob'
 end

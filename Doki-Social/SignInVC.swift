@@ -11,15 +11,20 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
 import SwiftKeychainWrapper
+import GoogleMobileAds
 
 class SignInVC: UIViewController {
 
     @IBOutlet weak var emailField: FancyField!
     @IBOutlet weak var passwordField: FancyField!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        bannerView.adUnitID = "ca-app-pub-1468309003365349/4248304115"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     
     override func viewDidAppear(_ animated: Bool) {
