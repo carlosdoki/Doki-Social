@@ -23,7 +23,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
-        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            print("DOKI: snapshot = \(snapshot.value)")
+        })
+        
+//        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         bannerView.adUnitID = "ca-app-pub-1468309003365349/4248304115"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
