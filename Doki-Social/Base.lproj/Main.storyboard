@@ -203,13 +203,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="USv-02-9rK">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="D4l-N6-IKp" customClass="CircleView" customModule="Doki_Social" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="D4l-N6-IKp" customClass="CircleView" customModule="Doki_Social" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.12449917942285538" green="0.58223050832748413" blue="0.6254311203956604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="AYd-t0-oCD"/>
                                                     <constraint firstAttribute="width" constant="49" id="qB8-5O-yco"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yNJ-h9-u3k" appends="YES" id="Boy-Mh-tRO"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02B-ha-5q9" customClass="FancyField" customModule="Doki_Social" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
@@ -367,6 +371,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="cFj-IL-mHq" id="Qdl-u8-pY0"/>
+                        <outlet property="imageAdd" destination="D4l-N6-IKp" id="los-Bh-5Zw"/>
                         <outlet property="tableView" destination="sJ4-2G-uLf" id="Gpr-YE-pnV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSignUp" id="2f6-2b-8Pd"/>
                     </connections>
@@ -375,6 +380,11 @@
                 <tapGestureRecognizer id="0Np-Wh-iaA">
                     <connections>
                         <action selector="singoutBtnPressed:" destination="iV5-7R-jmi" id="lg0-p8-6TO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yNJ-h9-u3k">
+                    <connections>
+                        <action selector="addImageTapped:" destination="iV5-7R-jmi" id="NJ6-0d-wtk"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
