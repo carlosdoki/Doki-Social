@@ -229,6 +229,9 @@
                                                     <constraint firstAttribute="height" constant="49" id="hWu-a3-j8B"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="iV5-7R-jmi" eventType="touchUpInside" id="QLh-hP-xIb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -343,6 +346,7 @@
                                         <color key="backgroundColor" red="0.89054572430000001" green="0.89054572430000001" blue="0.89054572430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="caption" destination="exA-kd-xGe" id="kqm-R1-9mT"/>
+                                            <outlet property="likesImg" destination="ubD-3N-beg" id="KAK-LS-J7K"/>
                                             <outlet property="likesLbl" destination="Ikb-wf-vkb" id="NCG-bQ-PAw"/>
                                             <outlet property="postImg" destination="DxI-2V-ChN" id="nCF-V7-MxU"/>
                                             <outlet property="profileImg" destination="Sg3-yX-7gn" id="Kps-ta-JHA"/>
@@ -371,6 +375,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="cFj-IL-mHq" id="Qdl-u8-pY0"/>
+                        <outlet property="captionField" destination="02B-ha-5q9" id="DSp-ey-V7O"/>
                         <outlet property="imageAdd" destination="D4l-N6-IKp" id="los-Bh-5Zw"/>
                         <outlet property="tableView" destination="sJ4-2G-uLf" id="Gpr-YE-pnV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSignUp" id="2f6-2b-8Pd"/>
