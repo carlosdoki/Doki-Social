@@ -284,7 +284,7 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DxI-2V-ChN">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-smile" translatesAutoresizingMaskIntoConstraints="NO" id="DxI-2V-ChN">
                                                                     <rect key="frame" x="0.0" y="68" width="327" height="144"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="144" id="mNA-yX-kau"/>
@@ -344,7 +344,7 @@
                                         <connections>
                                             <outlet property="caption" destination="exA-kd-xGe" id="kqm-R1-9mT"/>
                                             <outlet property="likesLbl" destination="Ikb-wf-vkb" id="NCG-bQ-PAw"/>
-                                            <outlet property="postImg" destination="ubD-3N-beg" id="osX-UD-lIJ"/>
+                                            <outlet property="postImg" destination="DxI-2V-ChN" id="nCF-V7-MxU"/>
                                             <outlet property="profileImg" destination="Sg3-yX-7gn" id="Kps-ta-JHA"/>
                                             <outlet property="usernameLbl" destination="s37-yh-E5X" id="JcE-Xj-ICy"/>
                                         </connections>
@@ -396,6 +396,7 @@
         <image name="FB-fLogo-Blue-broadcast-2" width="250" height="250"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
+        <image name="coffee-smile" width="2197" height="1465"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
