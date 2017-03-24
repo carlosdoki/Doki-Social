@@ -17,9 +17,11 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var caption: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
     @IBOutlet weak var likesImg: CircleView!
+    @IBOutlet weak var dateLbl: UILabel!
     
     var post: Post!
     var likesref : FIRDatabaseReference!
+    var userref: FIRDatabaseReference!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,10 +33,28 @@ class PostCell: UITableViewCell {
         likesImg.isUserInteractionEnabled = true
     }
     func configureCell(post: Post, img: UIImage? = nil) {
+        userref = DataService.ds.REF_USER_CURRENT
+        userref.observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            if let username = value?["username"] as? String {
+                self.usernameLbl.text = username
+            }
+            if let img = value?["photoUrl"] as? String {
+                if let data = NSData(contentsOf: NSURL(string: img) as! URL) {
+                    self.profileImg.image  = UIImage(data: data as Data)
+                }
+            }
+        })
+        
         self.post = post
         likesref = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
         self.caption.text = post.caption
         self.likesLbl.text = "\(post.likes)"
+        
+        let dayTimePeriodFormatter = DateFormatter()
+        dayTimePeriodFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        let data = NSDate(timeIntervalSince1970: post.postedDate/1000)
+        self.dateLbl.text = dayTimePeriodFormatter.string(from: data as Date)
         
         if img != nil {
             self.postImg.image = img

@@ -287,7 +287,7 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-smile" translatesAutoresizingMaskIntoConstraints="NO" id="DxI-2V-ChN">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DxI-2V-ChN">
                                                                     <rect key="frame" x="0.0" y="68" width="327" height="144"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="144" id="mNA-yX-kau"/>
@@ -296,7 +296,6 @@
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exA-kd-xGe">
                                                                     <rect key="frame" x="0.0" y="220" width="327" height="98"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
@@ -308,16 +307,22 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CUM-fJ-s0z">
-                                                            <rect key="frame" x="258.5" y="336" width="76.5" height="22"/>
+                                                            <rect key="frame" x="8" y="336" width="327" height="22"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQr-ZJ-4S4">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="24/03/2017 14:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgp-GE-aqw">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="245.5" height="22"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQr-ZJ-4S4">
+                                                                    <rect key="frame" x="250.5" y="0.0" width="35.5" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikb-wf-vkb">
-                                                                    <rect key="frame" x="40.5" y="0.0" width="36" height="22"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikb-wf-vkb">
+                                                                    <rect key="frame" x="291" y="0.0" width="36" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -328,6 +333,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="CUM-fJ-s0z" secondAttribute="bottom" constant="8" id="VIb-jb-BxW"/>
+                                                        <constraint firstItem="CUM-fJ-s0z" firstAttribute="leading" secondItem="xDG-uf-1El" secondAttribute="leading" constant="8" id="e7J-jF-ZhF"/>
                                                         <constraint firstAttribute="trailing" secondItem="CUM-fJ-s0z" secondAttribute="trailing" constant="8" id="gbm-GP-0Ar"/>
                                                         <constraint firstItem="a2M-qU-hTD" firstAttribute="leading" secondItem="xDG-uf-1El" secondAttribute="leading" constant="8" id="nA4-LY-CtK"/>
                                                         <constraint firstItem="a2M-qU-hTD" firstAttribute="top" secondItem="xDG-uf-1El" secondAttribute="top" constant="8" id="vwM-1T-qt6"/>
@@ -346,6 +352,7 @@
                                         <color key="backgroundColor" red="0.89054572430000001" green="0.89054572430000001" blue="0.89054572430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="caption" destination="exA-kd-xGe" id="kqm-R1-9mT"/>
+                                            <outlet property="dateLbl" destination="Kgp-GE-aqw" id="A1W-lb-pD3"/>
                                             <outlet property="likesImg" destination="ubD-3N-beg" id="KAK-LS-J7K"/>
                                             <outlet property="likesLbl" destination="Ikb-wf-vkb" id="NCG-bQ-PAw"/>
                                             <outlet property="postImg" destination="DxI-2V-ChN" id="nCF-V7-MxU"/>
@@ -401,7 +408,6 @@
         <image name="FB-fLogo-Blue-broadcast-2" width="250" height="250"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
-        <image name="coffee-smile" width="2197" height="1465"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>

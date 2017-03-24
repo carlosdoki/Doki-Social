@@ -65,11 +65,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-//            if let img  = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
-//                cell.configureCell(post: post, img: img)
-//            } else {
-                cell.configureCell(post: post, img: nil)
-//            }
+            if let img  = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+            } else {
+                cell.configureCell(post: post)
+            }
             return cell
         } else {
             return PostCell()
@@ -122,7 +122,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         let post : Dictionary<String, AnyObject> = [
             "caption": captionField.text as AnyObject,
             "imageUrl": imgUrl as AnyObject,
-            "likes": 0 as AnyObject
+            "likes": 0 as AnyObject,
+            "postedDate": FIRServerValue.timestamp() as AnyObject
         ]
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
         firebasePost.setValue(post)
